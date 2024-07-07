@@ -1,0 +1,47 @@
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    width: 50%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h4 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section form .MuiTextField-root {
+    margin-bottom: 20px;
+}
+
+.contact-section form .MuiButton-root {
+    align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        width: 80%;
+    }
+}

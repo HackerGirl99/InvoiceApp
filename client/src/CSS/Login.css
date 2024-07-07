@@ -1,0 +1,113 @@
+.login-container {
+    display: flex;
+    width: 900px;
+    height: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+}
+
+.welcome-section {
+    background-image: url('../assets/curtain3.jpeg'); /* Background image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-section h4 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.login-section {
+    background-color: #fff;
+    padding: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-section h4 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.login-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-section label {
+    margin-bottom: 5px;
+}
+
+.login-section input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-section .error {
+    color: red;
+    margin-top: 5px;
+}
+
+.login-section button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-section button:hover {
+    background-color: #0056b3;
+}
+
+.links {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.links .forget-password {
+    color: #007bff;
+}
+
+.links .forget-password:hover {
+    text-decoration: underline;
+}
+
+.links .sign-up a {
+    font-weight: bold;
+    color: blue;
+}
+
+.links .sign-up a:hover {
+    text-decoration: underline;
+}
