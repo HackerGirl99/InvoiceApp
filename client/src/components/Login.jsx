@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Button, TextField, Typography, Link } from '@mui/material';
+import {  Button, TextField, Typography, Link } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../CSS/Login.css';
@@ -18,7 +18,7 @@ const Login = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:8080/user/signin', {
+            const response = await axios.post('http://localhost:8080/user/login', {
                 username: formData.username,
                 password: formData.password
             });
@@ -47,15 +47,15 @@ const Login = () => {
     return (
         <div className="login-container">
             <div className="welcome-section">
-                <Typography variant="h4">Welcome Back!</Typography>
+                <Typography variant="h5">Welcome Back!</Typography>
                 <p>
-                    Log in to continue your journey with us. Access your personalized dashboard and exclusive content by entering your credentials below.
-                    Ready for more discoveries? Let's dive in! 😊
+                    Log in to continue your journey with us.
+                    Ready for more discoveries? Let's dive in! 
                 </p>
                 <img src={loginImage} alt="Login Illustration" />
             </div>
             <div className="login-section">
-                <Typography variant="h4">Sign In</Typography>
+                <Typography variant="h4">Login</Typography>
                 <form onSubmit={handleSignIn}>
                     <TextField
                         label="Username or Email"

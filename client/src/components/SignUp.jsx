@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Button, TextField, Typography, Link } from '@mui/material';
+import { Button, TextField, Typography, Link } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../CSS/Signup.css'; 
@@ -80,7 +80,7 @@ const SignUp = () => {
                     <Button type="submit" variant="contained" color="primary" sx={{ mt: 2 }}>Sign Up</Button>
                 </form>
                 <Typography variant="body1">
-                    Already have an account? <Link href="/signin">Login</Link>
+                    Already have an account? <Link href="/login">Login</Link>
                 </Typography>
             </div>
         </div>
